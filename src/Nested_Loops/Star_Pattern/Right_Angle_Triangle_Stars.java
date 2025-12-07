@@ -1,4 +1,4 @@
-package Nested_Loops;
+package Nested_Loops.Star_Pattern;
 
 import java.util.Scanner;
 

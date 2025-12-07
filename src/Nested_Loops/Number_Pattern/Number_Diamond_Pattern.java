@@ -1,8 +1,8 @@
-package Nested_Loops;
+package Nested_Loops.Number_Pattern;
 
 import java.util.Scanner;
 
-public class Piramid_up_down {
+public class Number_Diamond_Pattern {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -15,17 +15,16 @@ public class Piramid_up_down {
                 System.out.print("  ");
             }
             //print stars
-            for(int j=0; j<stars; j++){
-                System.out.print("* ");
+            for(int j=1; j<=stars; j++){
+                System.out.print(j+" ");
             }
-            //prepare for next line
             System.out.println();
             if(number_of_lines<n){
                 spaces--;
-                stars=stars+2;
+                stars = stars+2;
             }else{
                 spaces++;
-                stars=stars-2;
+                stars = stars-2;
             }
             number_of_lines++;
         }
