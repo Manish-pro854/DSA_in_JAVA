@@ -2,7 +2,7 @@ package Nested_Loops.Number_Pattern;
 
 import java.util.Scanner;
 
-public class Number_Pattern_2 {
+public class Number_Pattern_Diamond {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

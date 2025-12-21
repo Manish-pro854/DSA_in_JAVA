@@ -2,7 +2,7 @@ package Nested_Loops.Star_Pattern;
 
 import java.util.Scanner;
 
-public class Piramid_up_down {
+public class Diamond_star_pattern {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
