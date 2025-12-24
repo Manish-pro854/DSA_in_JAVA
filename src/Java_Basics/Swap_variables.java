@@ -1,6 +1,6 @@
 package Java_Basics;
 
-public class Swap_vaiables {
+public class Swap_variables {
     static void main(String[] args) {
         int a = 10;
         int b = 20;
