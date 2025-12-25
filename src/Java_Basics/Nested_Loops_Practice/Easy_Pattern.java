@@ -9,9 +9,9 @@ public class Easy_Pattern {
         int number_of_lines = 0;
         int stars = 1;
         while(number_of_lines<n){
-//            for(int i=1; i<=stars; i++){
-//                System.out.print("*");
-//            }
+            for(int i=1; i<=stars; i++){
+                System.out.print("*");
+            }
             for(int i=1; i<=stars; i++){
                 System.out.print(i);
             }
