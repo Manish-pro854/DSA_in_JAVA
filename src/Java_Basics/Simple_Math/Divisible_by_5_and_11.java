@@ -1,4 +1,4 @@
-package Java_Basics;
+package Java_Basics.Simple_Math;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Java_Basics;
+package Java_Basics.Simple_Math;
 
 public class Double_to_Int {
     static void main(String[] args) {

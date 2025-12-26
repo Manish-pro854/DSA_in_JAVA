@@ -1,6 +1,4 @@
-package Java_Basics;
-
-import java.util.Scanner;
+package Java_Basics.Simple_Math;
 
 public class Expression_Evaluation {
     static void main(String[] args) {

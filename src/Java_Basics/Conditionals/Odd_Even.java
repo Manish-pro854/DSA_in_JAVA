@@ -1,4 +1,4 @@
-package Java_Basics;
+package Java_Basics.Conditionals;
 
 import java.util.Scanner;
 
