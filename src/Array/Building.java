@@ -8,9 +8,9 @@ public class Building {
         while(number_of_lines>0){
             for(int k=0; k<arr.length; k++){
                 if(arr[k]>=number_of_lines){
-                    System.out.print("* ");
+                    System.out.print("*  ");
                 }else{
-                    System.out.print("  ");
+                    System.out.print("   ");
                 }
             }
             System.out.println();
