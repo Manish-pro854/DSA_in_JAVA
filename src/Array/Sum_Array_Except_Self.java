@@ -14,6 +14,7 @@ public class Sum_Array_Except_Self {
             res[j] = sum-arr[j];
         }
         return res;
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
