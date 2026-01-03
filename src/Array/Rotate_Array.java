@@ -21,10 +21,10 @@ public class Rotate_Array {
             k = k+n;
         }
         //reverse the array
-        reverse(arr,0,n-k-1); //left reverse
-        reverse(arr,n-k,n-1); //right reverse
+        reverse(arr,0,n-k-1); //left reverse array
+        reverse(arr,n-k,n-1); //right reverse array
 
-        reverse(arr,0,n-1); //full reverse
+        reverse(arr,0,n-1); //full reverse array
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
