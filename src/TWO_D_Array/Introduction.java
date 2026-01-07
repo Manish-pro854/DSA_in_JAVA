@@ -1,4 +1,4 @@
-package TWODArray;
+package TWO_D_Array;
 
 public class Introduction {
     static void main(String[] args) {

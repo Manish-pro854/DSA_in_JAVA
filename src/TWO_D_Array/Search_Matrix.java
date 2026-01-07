@@ -1,4 +1,4 @@
-package TWODArray;
+package TWO_D_Array;
 
 import java.util.Scanner;
 
