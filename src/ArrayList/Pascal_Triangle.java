@@ -39,7 +39,12 @@ public class Pascal_Triangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ArrayList<ArrayList<Integer>> ans = pascaltriangle(n);
-        System.out.println(ans);
+        ArrayList<ArrayList<Integer>> triangle = pascaltriangle(n);
+        for (int i = 0; i < triangle.size(); i++) {
+            for (int j = 0; j < triangle.get(i).size(); j++) {
+                System.out.print(triangle.get(i).get(j) + " ");
+            }
+            System.out.println();
+        }
     }
 }
