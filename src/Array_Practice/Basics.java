@@ -28,6 +28,21 @@ public class Basics {
             }
         }
         System.out.print(arr[n-1]);
+        System.out.println();
+    }
+    public static void Reverse(int[] arr, int n){
+        int left = 0;
+        int right = n-1;
+        while(left<right){
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+        for(int output: arr){
+            System.out.print(output+" ");
+        }
     }
     public static void main(String[] args) {
         //How to take input in array
@@ -39,5 +54,6 @@ public class Basics {
         }
         Sort(arr,n);
         RemoveDuplicates(arr,n);
+        Reverse(arr,n);
     }
 }
