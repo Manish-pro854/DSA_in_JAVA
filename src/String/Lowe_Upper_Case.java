@@ -22,8 +22,9 @@ public class Lowe_Upper_Case {
             else {
                 newCh = ch; // for spaces or symbols
             }
-            ans += newCh;
+            //Because this case runs too long 2 to power 10 but we need 2 to the power 9
+//            ans += newCh;
+            System.out.print(newCh);
         }
-        System.out.println(ans);
     }
 }
