@@ -11,6 +11,9 @@ class Student {
     public int sum(int a, int b){
         return a+b;
     }
+    public String toString(){
+        return "Notty hora h ke behan ke lund!!!!!!"+ name;
+    }
 }
 public class Introduction {
     static void main(String[] args) {
@@ -22,7 +25,7 @@ public class Introduction {
 
         Student s2 = new Student();
 
-        s2.name = "Ram";
+        s2.name = "Minku";
         s2.roll_no = 2;
 
         System.out.println(s1);
