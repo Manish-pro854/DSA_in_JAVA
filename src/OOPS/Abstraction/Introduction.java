@@ -3,6 +3,7 @@ package OOPS.Abstraction;
 //If we define a class abstract then we write abstract before class and then extends this class
 //with another child class then child class also have all the abstract function if not then
 //the function is not working.
+//we also made non abstract methods
 abstract class Vehicle{
     public void printA(){
         System.out.println("Printing A!!!");
