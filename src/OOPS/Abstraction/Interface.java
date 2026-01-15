@@ -3,6 +3,7 @@ package OOPS.Abstraction;
 //It is 100% abstraction
 //all methods are abstract
 interface Shape{
+    int val = 90; //it looks like=> abstract final val = 90; All properties are final
     public void draw();
     public void area();
 }
@@ -22,6 +23,7 @@ class Rectangle implements Shape, V{  //MULTIPLE INHERITANCE
 }
 class Circle implements Shape{
     public void draw() {
+        //        val = 67;  //gives error we cannot change it because it is final
         System.out.println("Drawing Circle");
     }
 
