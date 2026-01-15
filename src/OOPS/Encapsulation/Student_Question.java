@@ -13,14 +13,16 @@ class Student{
             return 'B';
         }else if(this.marks >= 45){
             return 'C';
-        }else{
+        }else if(this.marks >= 33) {
             return 'D';
+        }else{
+            return 'F';
         }
     }
 
     public void setMarks(int marks){
-        if(marks >100 || marks <0){
-            System.out.println("Not Possible");
+        if(marks > 100 || marks < 0){
+            System.out.println("Not Possible!!");
         }else{
             this.marks = marks;
         }
@@ -40,6 +42,9 @@ public class Student_Question {
         System.out.println(s.getGrade());
 
         s.setMarks(45);
+        System.out.println(s.getGrade());
+
+        s.setMarks(-5);
         System.out.println(s.getGrade());
     }
 }
