@@ -31,13 +31,13 @@ public class MCQ {
         }
          int maxScore = Math.max(minkuScore,Math.max(ankitScore,chinkuScore));
         if(maxScore==minkuScore){
-            System.out.println("Minku");
+            System.out.println("Minku Pass");
         }
         if(maxScore==ankitScore){
-            System.out.println("Ankit");
+            System.out.println("Ankit Pass");
         }
         if(maxScore==chinkuScore){
-            System.out.println("Chinku");
+            System.out.println("Chinku Pass");
         }
     }
 }
