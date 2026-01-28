@@ -1,21 +1,21 @@
 package LinkedList;
 
-class Node{
+class Nodee{
     int data;
-    Node next;
+    Nodee next;
 
-    public Node(int data){
+    public Nodee(int data){
         this.data = data;
     }
 }
 
 public class Introduction {
     public static void main(String[] args) {
-        Node n1 = new Node(10);
+        Nodee n1 = new Nodee(10);
 
-        Node n2 = new Node(19);
+        Nodee n2 = new Nodee(19);
 
-        Node n3 = new Node(20);
+        Nodee n3 = new Nodee(20);
 
         n1.next = n2;
         n2.next = n3;
