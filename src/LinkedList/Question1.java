@@ -118,18 +118,36 @@ class LinkedList{
         this.size--;
     }
 
-    public int size(){
-        return this.size();
-    }
-
     public void dispaly(){
         Node temp = head;
 
         while(temp != null){
-            System.out.print(temp.data + ", ");
-            temp = temp.next;
+            System.out.print(temp.data+" ");
+            Node tempKaNext = temp.next;
+            temp = tempKaNext;
         }
         System.out.println();
+    }
+
+    public void removeAt(int idx){
+        if(idx==0){
+            removeFirst();
+        } else if(idx==size-1){
+           removeLast();
+        }else{
+            Node idxKaPrev = getAt(idx-1);
+            Node idxKaNext = getAt(idx+1);
+
+            idxKaPrev.next = idxKaNext;
+            size--;
+        }
+    }
+
+    //homework
+//    public void addAt(){}
+
+    public int size(){
+        return this.size();
     }
 }
 
@@ -157,5 +175,8 @@ public class Question1 {
         if(valueAtIdx != null) {
             System.out.println(valueAtIdx.data);
         }
+
+        ll.removeAt(2);
+        ll.dispaly();
     }
 }
