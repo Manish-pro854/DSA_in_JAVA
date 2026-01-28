@@ -76,6 +76,48 @@ class LinkedList{
         return temp;
     }
 
+    public void removeLast(){
+        if(size==0){
+            System.out.println("Not Possible to remove last, LinkedList Empty");
+            return;
+        } else if(size==1){
+            head = null;
+            tail = null;
+        }else {
+            Node tailKaPrev = getAt(size - 2);
+
+            tailKaPrev.next = null;
+            tail = tailKaPrev;
+        }
+        this.size--;
+    }
+
+    public void removeLast2(){
+        if(size == 0){
+            System.out.println("Not possible to remove last, linkedlist empty");
+            return;
+        } else if(size==1){
+            head = null;
+            tail = null;
+        } else {
+            Node curr = head;
+            Node prev = null;
+
+            while(curr != tail){
+                Node currKaNext = curr.next;
+
+                prev = curr;
+                curr = currKaNext;
+            }
+
+            Node tailKaPrev = prev;
+
+            tailKaPrev.next = null;
+            tail = tailKaPrev;
+        }
+        this.size--;
+    }
+
     public int size(){
         return this.size();
     }
@@ -111,7 +153,7 @@ public class Question1 {
 //        ll.removeFirst();
 //        ll.dispaly();
 
-        Node valueAtIdx = ll.getAt(3);
+        Node valueAtIdx = ll.getAt(5);
         if(valueAtIdx != null) {
             System.out.println(valueAtIdx.data);
         }
