@@ -143,8 +143,32 @@ class LinkedList{
         }
     }
 
-    //homework
-//    public void addAt(){}
+    public void addAt(int idx, int val) {
+        if(idx < 0 || idx > size) {
+            System.out.println("Invalid Index!");
+            return;
+        }
+
+        if(idx == 0) {
+            addFirst(val);
+            return;
+        }
+
+        if(idx == size) {
+            addLast(val);
+            return;
+        }
+
+        // Insert in middle
+        Node nn = new Node(val);
+        Node prev = getAt(idx - 1);  // Node before index
+        Node nextNode = prev.next;   // Node currently at index
+
+        prev.next = nn;
+        nn.next = nextNode;
+
+        size++;
+    }
 
     public int size(){
         return this.size();
@@ -178,5 +202,7 @@ public class Question1 {
 
         ll.removeAt(2);
         ll.dispaly();
+
+        ll.addAt(0,5);
     }
 }
